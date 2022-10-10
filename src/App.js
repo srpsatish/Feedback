@@ -14,7 +14,7 @@ function App() {
     localStorage.setItem('PageData', 1);
   }
   const pageno = localStorage.getItem('PageData');
-  const [pageNumber, setPageNumber] = useState(pageno);
+  const [pageNumber, setPageNumber] = useState(parseInt(pageno));
 
   const HandlePageIncrease = () => {
     setPageNumber(pageNumber + 1);
